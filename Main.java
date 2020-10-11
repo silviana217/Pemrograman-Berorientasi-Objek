@@ -1,35 +1,32 @@
 package com.tutorial;
 
-import java.util.*;
-
-
 public class Main {
-    public static void main(String[] args) {
-        String  username;
-        String password;
-        int salah=0;
-        Scanner inputUser = new Scanner(System.in);
+    public static void main (String[] args){
 
-        System.out.println("Login");
+        // y = (x + 2) * x
 
-        do {
-            salah++;
+        int y,x;
+        x = 5;
+        y = hitung(x);
 
-            System.out.print("Masukkan Username: ");
-            username = inputUser.next();
+        System.out.println("x = " + x + ", y = " + y);
 
-            System.out.print("Masukkan Password: ");
-            password = inputUser.next();
+        x = 20;
+        y = hitung(x);
+        System.out.println("x = " + x + ", y = " + y);
 
-            if (username.equals("gabriel") && password.equals("gabriel123")){
-                System.out.println("Username dan Password benar !");
-                return ;
-            }else{
-                System.out.println("Username dan Password Salah, telah salah - "+salah);
-            }
+        x = 40;
+        y = hitung(x);
+        System.out.println("x = " + x + ", y = " + y);
 
-        }while(salah <= 3);
+    }
 
+    public static int hitung(int input){
+        int hasil;
 
+//        hasil = (input + 2) * input;
+        hasil = input * input;
+
+        return hasil;
     }
 }
