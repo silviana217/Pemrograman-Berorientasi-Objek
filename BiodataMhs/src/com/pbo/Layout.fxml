@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.Blend?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="553.0" prefWidth="510.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.pbo.ControllerMahasiswa">
+   <children>
+      <Label alignment="CENTER" layoutX="42.0" layoutY="190.0" prefHeight="27.0" prefWidth="71.0" text="Nama" textFill="#8512b2">
+         <font>
+            <Font name="Arial Black" size="18.0" />
+         </font></Label>
+      <Button fx:id="buttonSubmit" layoutX="135.0" layoutY="424.0" mnemonicParsing="false" onAction="#buttonSubmitOnClick" prefHeight="68.0" prefWidth="235.0" text="Submit" />
+      <TextField fx:id="textNama" alignment="CENTER" layoutX="152.0" layoutY="191.0" prefHeight="25.0" prefWidth="200.0" />
+      <TextField fx:id="textNIM" alignment="CENTER" layoutX="152.0" layoutY="240.0" prefHeight="25.0" prefWidth="200.0" />
+      <TextField fx:id="textUmur" alignment="CENTER" layoutX="152.0" layoutY="282.0" prefHeight="25.0" prefWidth="200.0" />
+      <TextField fx:id="textJurusan" alignment="CENTER" layoutX="152.0" layoutY="329.0" prefHeight="25.0" prefWidth="200.0" />
+      <Label alignment="CENTER" layoutX="50.0" layoutY="235.0" prefHeight="17.0" prefWidth="54.0" text="NIM" textFill="#8512b2">
+         <font>
+            <Font name="Arial Black" size="18.0" />
+         </font></Label>
+      <Label alignment="CENTER" layoutX="41.0" layoutY="277.0" prefHeight="35.0" prefWidth="71.0" text="Umur" textFill="#8512b2">
+         <font>
+            <Font name="Arial Black" size="18.0" />
+         </font></Label>
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="15.0" layoutY="328.0" prefHeight="27.0" prefWidth="126.0" text="Jurusan" textFill="#8512b2">
+         <font>
+            <Font name="Arial Black" size="18.0" />
+         </font></Label>
+      <Text fill="#6dd8dd" layoutX="155.0" layoutY="82.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Biodata Mahasiswa" textAlignment="CENTER" wrappingWidth="194.0">
+         <font>
+            <Font name="System Bold Italic" size="36.0" />
+         </font>
+      </Text>
+   </children>
+   <padding>
+      <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+   </padding>
+   <effect>
+      <Blend />
+   </effect>
+</AnchorPane>
